@@ -1,0 +1,19 @@
+{
+  "name": "@rickybell/micro-odm",
+  "version": "0.0.1",
+  "description": "Very small ODM and Collection concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickybell/micro-odm.git"
+  },
+  "author": "Henrique Bock Belloube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickybell/micro-odm/issues"
+  },
+  "homepage": "https://github.com/rickybell/micro-odm#readme"
+}

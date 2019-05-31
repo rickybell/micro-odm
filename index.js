@@ -1,4 +1,4 @@
-class MicroODM {
+export class MicroODM {
   constructor(document = {}) {
     document.type = this.constructor.name.toLowerCase();
     document.name = this.constructor.name;
@@ -25,7 +25,7 @@ class MicroODM {
   }
 }
 
-class CollectionODM {
+export class CollectionODM {
   constructor(initialItens = {}) {
     const configuration = {};
     this.document = {};
@@ -75,5 +75,3 @@ class CollectionODM {
     }
   }
 }
-
-export { MicroODM, CollectionODM };

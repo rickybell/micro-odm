@@ -27,7 +27,7 @@ class MicroODM {
 
 module.exports.MicroODM;
 
-export class CollectionODM {
+class CollectionODM {
   constructor(initialItens = {}) {
     const configuration = {};
     this.document = {};

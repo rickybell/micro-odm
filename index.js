@@ -1,4 +1,4 @@
-export class MicroODM {
+class MicroODM {
   constructor(document = {}) {
     document.type = this.constructor.name.toLowerCase();
     document.name = this.constructor.name;
@@ -24,6 +24,8 @@ export class MicroODM {
     return JSON.stringify(this.document);
   }
 }
+
+module.exports.MicroODM;
 
 export class CollectionODM {
   constructor(initialItens = {}) {
@@ -75,3 +77,5 @@ export class CollectionODM {
     }
   }
 }
+
+module.exports.CollectionODM;

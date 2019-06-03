@@ -1,6 +1,6 @@
 {
   "name": "@rickybell/micro-odm",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Very small ODM and Collection concepts.",
   "main": "index.js",
   "scripts": {

@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 class MicroODM {
   constructor(document = {}) {
     document.type = this.constructor.name.toLowerCase();

@@ -27,7 +27,7 @@ class MicroODM {
 }
 
 class CollectionODM {
-  constructor(initialItens = {}) {
+  constructor(initialItens = []) {
     const configuration = {};
     this.document = {};
     this.document.type = this.constructor.name.toLowerCase();

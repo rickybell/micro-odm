@@ -5,7 +5,7 @@
   "main": "./distribution/index.js",
   "scripts": {
     "test": "mocha --require @babel/register '__tests__/**/**spec.js'",
-    "build": "babel source --presets babel-preset-es2015 --out-dir distribution",
+    "build": "babel source --out-dir distribution",
     "prepublish": "yarn run build"
   },
   "repository": {
@@ -19,13 +19,10 @@
   },
   "homepage": "https://github.com/rickybell/micro-odm#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/register": "^7.4.4",
-    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
   },

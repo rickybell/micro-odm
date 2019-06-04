@@ -41,9 +41,18 @@ describe("CollectionODM", () => {
       });
     });
     describe("find", () => {
+      beforeEach(() => {
+        const newItem = new MicroODM({
+          firstName: "Mary",
+          lastName: "Stewart"
+        });
+        collectionODM.add(newItem);
+      });
       it("should brings the object from the information", () => {
-        const obj = collectionODM.find({ id: 0.30950533601439867 });
-        expect(obj.type).equal("microodm");
+        const obj = collectionODM.find({
+          firstName: "Mary"
+        });
+        expect(obj.lastName).equal("Stewart");
       });
     });
   });

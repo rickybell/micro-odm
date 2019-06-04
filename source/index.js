@@ -47,13 +47,19 @@ class CollectionODM {
     this.setOfItems.push(item);
   }
 
-  find(info) {
-    const index = this.setOfItems.findIndex(item => {
-      return Object.keys(item).find(
-        key => item[key].toString() === info.toString()
-      );
+  find(infoToSearch) {
+    const keyToSearch = Object.keys(infoToSearch)[0];
+    const indexIfFound = this.setOfItems.findIndex(itemToCompare => {
+      return Object.keys(itemToCompare.document).find(keyFromItem => {
+        if (keyFromItem === keyToSearch) {
+          return (
+            itemToCompare[keyFromItem].toString() ===
+            infoToSearch[keyToSearch].toString()
+          );
+        }
+      });
     });
-    return this.setOfItems[index];
+    return this.setOfItems[indexIfFound];
   }
 
   delete(info) {

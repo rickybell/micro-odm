@@ -5,6 +5,7 @@
   "main": "./distribution/index.js",
   "scripts": {
     "test": "mocha --require @babel/register '__tests__/**/**spec.js'",
+    "testfile": "mocha --require @babel/register ",
     "build": "babel source --out-dir distribution",
     "prepublish": "yarn run build"
   },

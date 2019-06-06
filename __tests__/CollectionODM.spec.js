@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { MicroODM, CollectionODM } from "../distribution/index.js";
 import { expect } from "chai";
 
